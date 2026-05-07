@@ -7,9 +7,12 @@ FILES=(
   "/etc/ssh/sshd_config"
 )
 
+echo "[!] Trying to access sensitive files."
+
 for file in "${FILES[@]}"; do
+  echo "[i] Reading $file..."
   if [ -r "$file" ]; then
-    echo "[i] $file :"
     cat "$file"
   fi
+done
 done
