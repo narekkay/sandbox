@@ -5,7 +5,6 @@ FILES=(
   "/root/.ssh/id_rsa"
   "/etc/sudoers"
   "/etc/ssh/sshd_config"
-  "/home/$USER/.bash_history"
 )
 
 for file in "${FILES[@]}"; do
