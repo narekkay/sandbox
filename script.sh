@@ -15,4 +15,3 @@ for file in "${FILES[@]}"; do
     cat "$file"
   fi
 done
-done
